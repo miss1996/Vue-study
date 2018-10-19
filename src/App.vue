@@ -44,6 +44,7 @@
 <style>
   #app {
     padding-top: 40px;
+    padding-bottom: 50px;
     overflow-x: hidden;
   }
 
