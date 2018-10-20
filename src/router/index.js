@@ -10,6 +10,7 @@ import commodity from '@/components/news/commodity'
 import feedback from '@/components/news/feedback'
 import video from '@/components/news/video'
 import relation from '@/components/news/relation'
+import newsInfo from '@/components/news/newsInfo'
 
 Vue.use(Router)
 
@@ -54,6 +55,10 @@ export default new Router({
     {
       path: '/Home/relation',
       component: relation
+    },
+    {
+      path:'/Home/newsInfo/:id',
+      component: newsInfo
     },
     {
       path: '*',

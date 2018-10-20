@@ -16,7 +16,7 @@
       <!-- 连接接口渲染的数据 -->
 
       <li class="mui-table-view-cell mui-media" v-for="item in newsList" :key="item.id">
-        <a href="javascript:;">
+        <router-link :to="'/Home/newsInfo/' + item.id">
           <img class="mui-media-object mui-pull-left" :src="item.img_url">
           <div class="mui-media-body">
             <h1>{{item.title}}</h1>
@@ -25,7 +25,7 @@
               <span>点击: {{item.click}}</span>
             </p>
           </div>
-        </a>
+        </router-link>
       </li>
     </ul>
   </div>
